@@ -18,7 +18,7 @@
 }
 
 .nav-container > * {
-  margin: 20px 0;
+  margin: 20px 10px;
   /* border: solid black; */
 }
 
@@ -156,7 +156,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 43.75em) {
+@media screen and (max-width: 50em) {
   .nav-container div,
   .nav-container form {
     display: none;

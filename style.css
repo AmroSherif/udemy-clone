@@ -14,10 +14,11 @@
 .nav-container {
   display: flex;
   justify-content: space-around;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
 }
 
 .nav-container > * {
-  margin-top: 20px;
+  margin: 20px 0;
   /* border: solid black; */
 }
 
@@ -30,6 +31,10 @@ nav form input,
 nav div button {
   border: 0;
   background-color: inherit;
+}
+
+nav form button,
+nav form input {
   padding: 10px;
 }
 
@@ -81,6 +86,51 @@ nav a:visited {
 
 /* Navigation bar styles end*/
 
+/* Header styles start*/
+
+.header-container {
+  background-color: #f8f9fb;
+
+  position: relative;
+  z-index: -1;
+
+  width: 96%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-container img {
+  width: auto;
+}
+
+.header-container div {
+  height: 25%;
+  width: 400px;
+  background-color: white;
+  align-self: center;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header-container p {
+  word-spacing: 5px;
+  margin: 20px 0 10px 0;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+/* Header styles end*/
+
+/* Responsive style start */
+
 @media screen and (min-width: 43.75em) {
   .menu-logo {
     display: none;
@@ -98,6 +148,12 @@ nav a:visited {
   .mq2-hide {
     display: none;
   }
+
+  .header-container img,
+  .header-container div {
+    width: 45%;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 43.75em) {
@@ -112,9 +168,29 @@ nav a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
   }
 
   .nav-container {
     justify-content: space-between;
   }
+
+  .header-container {
+    flex-direction: column-reverse;
+  }
+
+  .header-container img,
+  .header-container div {
+    align-self: center;
+  }
+
+  .header-container img {
+    width: 60%;
+  }
+
+  .header-container div {
+    width: 100%;
+  }
 }
+
+/* Responsive style end */

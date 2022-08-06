@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation bar styles start*/
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-container > * {
+  margin-top: 20px;
+  /* border: solid black; */
+}
+
+.nav-option:hover {
+  color: #7627d4;
+}
+
+nav form button,
+nav form input,
+nav div button {
+  border: 0;
+  background-color: inherit;
+  padding: 10px;
+}
+
+nav form input {
+  width: 100%;
+}
+
+nav form {
+  display: flex;
+  border: 1px solid #1c1d1f;
+  border-radius: 9999px;
+  overflow: hidden;
+  background-color: #f7f9fa;
+  flex-grow: 0.5;
+}
+
+.nav-option-img:hover {
+  filter: invert(23%) sepia(48%) saturate(6168%) hue-rotate(261deg)
+    brightness(83%) contrast(101%);
+}
+
+nav a,
+nav a:active,
+nav a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.a-button-light,
+.a-button-dark {
+  border: 1px black solid;
+  padding: 10px 15px;
+  /* why this don't overwrite the star  */
+  font-weight: 500;
+}
+
+.a-button-dark {
+  color: white;
+  background-color: #1c1d1f;
+}
+
+.a-button-light:hover {
+  background-color: #f7f9fa;
+}
+
+.a-button-dark:hover {
+  background-color: black;
+}
+
+/* Navigation bar styles end*/
+
+@media screen and (min-width: 43.75em) {
+  .menu-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 80em) {
+  .mq1-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 62em) {
+  .mq1-hide,
+  .mq2-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 43.75em) {
+  .nav-container div,
+  .nav-container form {
+    display: none;
+  }
+
+  .center.menu-logo,
+  .center.logo {
+    /* Center them back again */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+  }
+}

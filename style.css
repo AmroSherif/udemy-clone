@@ -286,11 +286,9 @@ h1 {
 
 .course a,
 .course-author {
-  /* Don't understand them clearly */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  /* Don't understand them clearly */
 }
 
 .course-author {
@@ -341,4 +339,5 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
+
 /* Section style end */

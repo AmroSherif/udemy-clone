@@ -17,17 +17,23 @@ body {
 
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  padding: 5px 10px;
 }
 
 .nav-container > * {
-  margin: 20px 10px;
+  margin: 12px 0;
+  padding: 0 12px;
   /* border: solid black; */
 }
 
 .nav-option:hover {
   color: #7627d4;
+}
+
+.logo img {
+  width: 90px;
 }
 
 nav form button,
@@ -46,13 +52,17 @@ nav form input {
   width: 100%;
 }
 
+nav form input:focus {
+  outline: none;
+}
+
 nav form {
+  flex-grow: 1;
   display: flex;
   border: 1px solid #1c1d1f;
   border-radius: 9999px;
   overflow: hidden;
   background-color: #f7f9fa;
-  flex-grow: 0.5;
 }
 
 .nav-option-img:hover {
@@ -67,10 +77,15 @@ a:visited {
   text-decoration: none;
 }
 
+.nav-option-img {
+  width: 20.8px;
+}
+
 .a-button-light,
 .a-button-dark {
   border: 1px black solid;
   padding: 10px 15px;
+  margin-left: 8px;
   /* why this don't overwrite the star  */
   font-weight: 500;
 }
@@ -86,6 +101,10 @@ a:visited {
 
 .a-button-dark:hover {
   background-color: black;
+}
+
+.lang-button {
+  padding: 0 5px;
 }
 
 /* Navigation bar styles end*/
@@ -340,4 +359,7 @@ h1 {
   gap: 20px;
 }
 
+.category-link {
+  margin: 0;
+}
 /* Section style end */

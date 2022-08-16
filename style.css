@@ -5,6 +5,10 @@
   font-family: "DM Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
 }
@@ -41,6 +45,10 @@ body {
 
 .logo img {
   width: 90px;
+}
+
+nav form button {
+  cursor: pointer;
 }
 
 nav form button,
@@ -187,10 +195,15 @@ h1 {
   font-weight: 500;
   color: #6a6f73;
   background-color: white;
+  cursor: pointer;
 }
 
 .section-container ul button:hover {
   color: #1c1d1f;
+}
+
+.section-container-dark-button {
+  color: #1c1d1f !important;
 }
 
 .section-container li {

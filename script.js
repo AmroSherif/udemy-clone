@@ -244,6 +244,7 @@ for (let i = 1; i <= 7; ++i) {
 function swiperInit() {
   new Swiper(".mySwiper", {
     slidesPerView: 1,
+    slidesPerGroup: 1,
     spaceBetween: 20,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -252,18 +253,22 @@ function swiperInit() {
     breakpoints: {
       576: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetween: 20,
       },
       768: {
         slidesPerView: 3,
+        slidesPerGroup: 3,
         spaceBetween: 20,
       },
       992: {
         slidesPerView: 4,
+        slidesPerGroup: 4,
         spaceBetween: 20,
       },
       1200: {
         slidesPerView: 5,
+        slidesPerGroup: 5,
         spaceBetween: 20,
       },
     },

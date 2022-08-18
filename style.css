@@ -300,6 +300,7 @@ h1 {
 
 .course {
   padding-top: 30px;
+  height: auto;
 }
 
 .course > img {
@@ -309,6 +310,7 @@ h1 {
 
 .course h4 {
   margin: 12px 0 4px;
+  flex-grow: 1;
 }
 
 .course a {
